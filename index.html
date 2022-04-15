@@ -1,4 +1,3 @@
-<div>[TOC]</div>
 <h1 ><strong>第零章 我是 WM World Machine你学会了吗</strong></h1>
 <h2 ><strong>#0-0 序言</strong></h2>
 <h2 ><strong>#0-1 下载与安装</strong></h2>
@@ -17,7 +16,7 @@
 <p>工具栏：其实每一个有图标的选项都是文字选项卡里面比较重要的选项，这里只重点说一下下面那行有图标的。从左到右依次是新建工程、打开工程、打开示例工程（强烈推荐翻阅，有助于快速上手）、保存、导出页面、工程设置页面、WM设置页面、随机种子、显示/隐藏侧栏、修改工作布局、工作页面、布局界面、探索页面、3D预览、2D预览、构建全部模块、构建当前模块、分块构建。</p>
 <p>至于右键模块弹出的窗口，这里直接借用花开汉化版的翻译，相关快捷键也有体现，不再赘述。</p>
 <p><img src="http://thingy.top/view.php/70c3a0b444bc5ce32fe85573c8fe27f6.png" referrerpolicy="no-referrer" alt="未标题-1"></p>
-<h2 ><strong>#0-4</strong> 尺寸对应</h2>
+<h2 ><strong>#0-4 尺寸对应</strong></h2>
 <p>地形圈普遍认为，地形的1比1即指1方块等于10m。根据该规则，应将工程设置页面中的子选项卡Scene Setup中Width（或Breath）的值与Resolution的值设置为 x km 与 100x 。1k地形即指10.24km x 10.24km的地形，其他尺寸同理。例如Width为10.24km，Breath为10.24km，Resolution为1024x1024。这就是所说的1k地形。如果需要非正方形尺寸地形，只需要修改Square Aspect为Any Aspect Ratio。如果您的尺寸设置正确，Detail scale的值应为10.00m/pixel。WM默认的地形高度为4km（400方块），需要将Project Setup选项卡中Dimension Preference的值根据需要修改为2.56km（256方块）或3.84km（384方块）等等。</p>
 <p><img src="http://thingy.top/view.php/e1b2f048e163172c7de1c179f19ca589.png" referrerpolicy="no-referrer"></p>
 <h1 >第一章 <strong>年轻人的第一个WM工程</strong></h1>
@@ -179,29 +178,29 @@
 <p>Direction：决定向外过渡还是向内过渡。</p>
 <p>Shape Breakup：分形强度。这一强度是指真正的分形强度。</p>
 <h2 ><strong>#2-3 滤镜</strong></h2>
-<h3 >#2-3-1 滤镜：Add Noise</h3>
+<h3 ><strong>#2-3-1 滤镜：Add Noise</strong></h3>
 <p>噪化地形。</p>
 <p><img src="http://thingy.top/view.php/21d4818d2af97e153f5d7f8f28726fbd.png" referrerpolicy="no-referrer"></p>
-<h3 >#2-3-2 滤镜：环境光遮蔽（Ambient Occlusion）</h3>
+<h3 ><strong>#2-3-2 滤镜：环境光遮蔽（Ambient Occlusion）</strong></h3>
 <p>在3028时代有个大神想要AO效果，于是用了360个角度的光照图叠出来了AO，官方看见之后连声叫好，正义制作了AO模块，只留下暴力大神在风中凌乱。</p>
 <p><img src="http://thingy.top/view.php/3f6965973acf0dbc92afb764b30fc225.png" referrerpolicy="no-referrer"></p>
 <p>我之前录过一期视频教程（<a href='https://www.bilibili.com/video/BV19o4y1D7rF' target='_blank' class='url'>https://www.bilibili.com/video/BV19o4y1D7rF</a>）专门讲这个模块的，有需要可以看看。</p>
-<h3 >#2-3-3 滤镜：Bias/Gain</h3>
+<h3 ><strong>#2-3-3 滤镜：Bias/Gain</strong></h3>
 <p>地形圈有这么一句玩笑话，如果你想让你的地形看起来高端，就把Clamp换成Bias/Gain。这个模块的效果和Clamp几乎一致，但是相对用的人少。用法和PS的亮度/对比度相同。</p>
-<h3 >#2-3-4 滤镜：Blur</h3>
+<h3 ><strong>#2-3-4 滤镜：Blur</strong></h3>
 <p>效果是模糊，除了一般的高斯模块，这个模块还提供了径向模糊，修改Method的选项即可。</p>
 <p><img src="http://thingy.top/view.php/4db03aca0542445ae9716d648a7f71b1.png" referrerpolicy="no-referrer"></p>
 <p><img src="http://thingy.top/view.php/64ee4813dad164b448c130abc9111044.png" referrerpolicy="no-referrer"></p>
-<h3 >#2-3-5 滤镜：Clamp</h3>
+<h3 ><strong>#2-3-5 滤镜：Clamp</strong></h3>
 <p>十分重要的一个模块，可以压低/削顶/抬高地形，分别对应Operation的三个选项。</p>
 <p>这个模块还提供了一个Find Extent的按钮，点击这个按钮，WM就会将Clamp的模式转为Expand，并自动帮你对应到地形的最低点和最高点，让地形占据整个高度范围。</p>
-<h3 >#2-3-6 滤镜：晶格化（Crystallize）</h3>
+<h3 ><strong>#2-3-6 滤镜：晶格化（Crystallize）</strong></h3>
 <p>可以将地形转化为六边形或正方形的堆叠。4027新增的模块，还没有模块图标。</p>
 <p><img src="http://thingy.top/view.php/f00fa39e411fc9a4d6e26e2b06cc46a1.png" referrerpolicy="no-referrer"></p>
-<h3 >#2-3-7 滤镜：曲线（Curve）</h3>
+<h3 ><strong>#2-3-7 滤镜：曲线（Curve）</strong></h3>
 <p>和你在PS里面用的曲线一样的，没什么可说的。对于新人十分难以控制，不推荐。</p>
 <p><img src="http://thingy.top/view.php/e888bdcf78c74279b27d6920852ca416.png" referrerpolicy="no-referrer"></p>
-<h3 >#2-3-8 滤镜：Displacement</h3>
+<h3 ><strong>#2-3-8 滤镜：Displacement</strong></h3>
 <p>特别特别重要的一个模块，可以对图像进行位移操作，或者俗称是扭一扭。第二个接口必须接东西，Vector模式下第三个接口也必须接东西。而且你会发现，伴随着Type的变化，端口的名字也会发生变化。</p>
 <p><img src="http://thingy.top/view.php/b754a0113e1aa6621fc54ba42c929c43.png" referrerpolicy="no-referrer"></p>
 <p>Type：</p>
@@ -210,13 +209,13 @@
 <p>这样的说法及其不正确，只是为了方便理解。</p>
 <p>Direction：控制位移的方向。</p>
 <p>Distance：控制位移的距离。</p>
-<h3 >#2-3-9 滤镜：Equalizer</h3>
+<h3 ><strong>#2-3-9 滤镜：Equalizer</strong></h3>
 <p>屁用没有。</p>
 <p>但是有点屁用，在一些遮罩，比如Snow的Snow Mask遮罩里面，一些地方及其不突出导致你预览起来和到WP里面刷的雪是两回事，这时候只要接入Equalizer，就能让原本不明显的地方突出起来，以便我们进行下一步过滤。</p>
 <p><img src="http://thingy.top/view.php/a0fb69d2b04d21718845d67678736777.png" referrerpolicy="no-referrer"></p>
-<h3 >#2-3-10 滤镜：水流重构/河道预处理（Flow Restructure）</h3>
+<h3 ><strong>#2-3-10 滤镜：水流重构/河道预处理（Flow Restructure）</strong></h3>
 <p>字面意思，能有效解决Create Water的断流问题，水系问题后面会系统地讲，目前你只需要知道，这个模块可以来开一些大型的河道，让地形的高低落差能够实现水流畅通而不是堵成湖泊。</p>
-<h3 >#2-3-11 滤镜：Expander</h3>
+<h3 ><strong>#2-3-11 滤镜：Expander</strong></h3>
 <p>对地形进行扩张，处理遮罩和造山的利器。</p>
 <p><img src="http://thingy.top/view.php/cbddceee20b57d41ce7cc26312d54d94.png" referrerpolicy="no-referrer"></p>
 <p>Action：扩张方式，Expand向外扩张，Shrink向内收缩，Open和Close夹在两者之间，Close更靠近Expand，Open更靠近Shrink。</p>
@@ -224,11 +223,11 @@
 <p>Distance：扩张程度。</p>
 <p>这个模块还有一个旧版本，WM2.x有Circle模式的扩张，十分好用。</p>
 <p><img src="http://thingy.top/view.php/ca2bf6bb2a373708b345834a9173649b.png" referrerpolicy="no-referrer"></p>
-<h3 >#2-3-12 滤镜：Flipper</h3>
+<h3 ><strong>#2-3-12 滤镜：Flipper</strong></h3>
 <p>翻转。有时候你好不容易画出来好看的大陆架，但是发现方向错了，一正过来不那么好看了，就可以翻转一下。不太常用。</p>
-<h3 >#2-3-13 滤镜：Inverter</h3>
+<h3 ><strong>#2-3-13 滤镜：Inverter</strong></h3>
 <p>反相。</p>
-<h3 >#2-3-14 滤镜：概率（Probability）</h3>
+<h3 ><strong>#2-3-14 滤镜：概率（Probability）</strong></h3>
 <p><img src="http://thingy.top/view.php/9f570c99d3468b93a70353317811afea.png" referrerpolicy="no-referrer"></p>
 <p>我做过这个模块官方文档的翻译，在这里直接引用了。</p>
 <p>概率滤镜将输入图视为概率密度函数，并创建一个根据该密度函数随机散射单个像素点的输出蒙版。这对于物件放置以及上色十分有用。</p>
@@ -238,5 +237,14 @@
 <p>结合以上内容，有几个例子：</p>
 <p>偏离值为1且强度值为0.5时，所有位置生成点的机会相同（偏离1.0），但是强度为0.5时，意味着输出将是随机的白色噪声，而不是纯白色。</p>
 <p>0.5的偏离值和1.0的强度值将创建一个最类似于输入值的贴图，只是单点绘制而不是连续绘制的。</p>
-<h3 >#2-3-15 滤镜：Ramp</h3>
+<h3 ><strong>#2-3-15 滤镜：Ramp</strong></h3>
+<p>取一个高度之后对这个高度以上的地形进行翻转，最终形成分层的图案。</p>
 <p><img src="http://thingy.top/view.php/a704d3b1c313e26394b16496ab44381f.png" referrerpolicy="no-referrer"></p>
+<h3 ><strong>#2-3-16 滤镜：Simple Transform</strong></h3>
+<p>功能十分丰富的一个模块，可以实现各种简单的高度调整。效果强度由Intensity控制。</p>
+<h3 ><strong>#2-3-17 滤镜：阶梯化（Terrace）</strong></h3>
+<p><img src="http://thingy.top/view.php/968977eb5914d2c6ad52548a35e72053.png" referrerpolicy="no-referrer"></p>
+<p>Terrace Method：控制阶梯化的形式。Simple不过渡，Shar锐利边缘，Smooth柔和边缘。</p>
+<p>Number Of Terraces：阶梯化层数。</p>
+<p>Terrace Shape：效果强度。越接近0.5越弱。</p>
+<p>Terrace Layering：在各阶梯间填加的小一点的阶梯的层数。</p>
