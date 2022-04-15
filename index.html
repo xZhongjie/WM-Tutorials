@@ -178,4 +178,65 @@
 <p>Type：类型。一般情况下，一定一定一定要改成Linear，</p>
 <p>Direction：决定向外过渡还是向内过渡。</p>
 <p>Shape Breakup：分形强度。这一强度是指真正的分形强度。</p>
-<p>&nbsp;</p>
+<h2 ><strong>#2-3 滤镜</strong></h2>
+<h3 >#2-3-1 滤镜：Add Noise</h3>
+<p>噪化地形。</p>
+<p><img src="http://thingy.top/view.php/21d4818d2af97e153f5d7f8f28726fbd.png" referrerpolicy="no-referrer"></p>
+<h3 >#2-3-2 滤镜：环境光遮蔽（Ambient Occlusion）</h3>
+<p>在3028时代有个大神想要AO效果，于是用了360个角度的光照图叠出来了AO，官方看见之后连声叫好，正义制作了AO模块，只留下暴力大神在风中凌乱。</p>
+<p><img src="http://thingy.top/view.php/3f6965973acf0dbc92afb764b30fc225.png" referrerpolicy="no-referrer"></p>
+<p>我之前录过一期视频教程（<a href='https://www.bilibili.com/video/BV19o4y1D7rF' target='_blank' class='url'>https://www.bilibili.com/video/BV19o4y1D7rF</a>）专门讲这个模块的，有需要可以看看。</p>
+<h3 >#2-3-3 滤镜：Bias/Gain</h3>
+<p>地形圈有这么一句玩笑话，如果你想让你的地形看起来高端，就把Clamp换成Bias/Gain。这个模块的效果和Clamp几乎一致，但是相对用的人少。用法和PS的亮度/对比度相同。</p>
+<h3 >#2-3-4 滤镜：Blur</h3>
+<p>效果是模糊，除了一般的高斯模块，这个模块还提供了径向模糊，修改Method的选项即可。</p>
+<p><img src="http://thingy.top/view.php/4db03aca0542445ae9716d648a7f71b1.png" referrerpolicy="no-referrer"></p>
+<p><img src="http://thingy.top/view.php/64ee4813dad164b448c130abc9111044.png" referrerpolicy="no-referrer"></p>
+<h3 >#2-3-5 滤镜：Clamp</h3>
+<p>十分重要的一个模块，可以压低/削顶/抬高地形，分别对应Operation的三个选项。</p>
+<p>这个模块还提供了一个Find Extent的按钮，点击这个按钮，WM就会将Clamp的模式转为Expand，并自动帮你对应到地形的最低点和最高点，让地形占据整个高度范围。</p>
+<h3 >#2-3-6 滤镜：晶格化（Crystallize）</h3>
+<p>可以将地形转化为六边形或正方形的堆叠。4027新增的模块，还没有模块图标。</p>
+<p><img src="http://thingy.top/view.php/f00fa39e411fc9a4d6e26e2b06cc46a1.png" referrerpolicy="no-referrer"></p>
+<h3 >#2-3-7 滤镜：曲线（Curve）</h3>
+<p>和你在PS里面用的曲线一样的，没什么可说的。对于新人十分难以控制，不推荐。</p>
+<p><img src="http://thingy.top/view.php/e888bdcf78c74279b27d6920852ca416.png" referrerpolicy="no-referrer"></p>
+<h3 >#2-3-8 滤镜：Displacement</h3>
+<p>特别特别重要的一个模块，可以对图像进行位移操作，或者俗称是扭一扭。第二个接口必须接东西，Vector模式下第三个接口也必须接东西。而且你会发现，伴随着Type的变化，端口的名字也会发生变化。</p>
+<p><img src="http://thingy.top/view.php/b754a0113e1aa6621fc54ba42c929c43.png" referrerpolicy="no-referrer"></p>
+<p>Type：</p>
+<p>Angle And Distance，你可以简单理解为，把第一个端口的地形往第二个端口的形状去扭，第三个端口做引导，有没有都无所谓。</p>
+<p>Vector模式下，第二个接口控制X怎么扭，第三个接口控制Y怎么扭。</p>
+<p>这样的说法及其不正确，只是为了方便理解。</p>
+<p>Direction：控制位移的方向。</p>
+<p>Distance：控制位移的距离。</p>
+<h3 >#2-3-9 滤镜：Equalizer</h3>
+<p>屁用没有。</p>
+<p>但是有点屁用，在一些遮罩，比如Snow的Snow Mask遮罩里面，一些地方及其不突出导致你预览起来和到WP里面刷的雪是两回事，这时候只要接入Equalizer，就能让原本不明显的地方突出起来，以便我们进行下一步过滤。</p>
+<p><img src="http://thingy.top/view.php/a0fb69d2b04d21718845d67678736777.png" referrerpolicy="no-referrer"></p>
+<h3 >#2-3-10 滤镜：水流重构/河道预处理（Flow Restructure）</h3>
+<p>字面意思，能有效解决Create Water的断流问题，水系问题后面会系统地讲，目前你只需要知道，这个模块可以来开一些大型的河道，让地形的高低落差能够实现水流畅通而不是堵成湖泊。</p>
+<h3 >#2-3-11 滤镜：Expander</h3>
+<p>对地形进行扩张，处理遮罩和造山的利器。</p>
+<p><img src="http://thingy.top/view.php/cbddceee20b57d41ce7cc26312d54d94.png" referrerpolicy="no-referrer"></p>
+<p>Action：扩张方式，Expand向外扩张，Shrink向内收缩，Open和Close夹在两者之间，Close更靠近Expand，Open更靠近Shrink。</p>
+<p>Type：扩张种类，分别是高斯（类似圆形）、线性坡度（类似棱锥）和方块。</p>
+<p>Distance：扩张程度。</p>
+<p>这个模块还有一个旧版本，WM2.x有Circle模式的扩张，十分好用。</p>
+<p><img src="http://thingy.top/view.php/ca2bf6bb2a373708b345834a9173649b.png" referrerpolicy="no-referrer"></p>
+<h3 >#2-3-12 滤镜：Flipper</h3>
+<p>翻转。有时候你好不容易画出来好看的大陆架，但是发现方向错了，一正过来不那么好看了，就可以翻转一下。不太常用。</p>
+<h3 >#2-3-13 滤镜：Inverter</h3>
+<p>反相。</p>
+<h3 >#2-3-14 滤镜：概率（Probability）</h3>
+<p><img src="http://thingy.top/view.php/9f570c99d3468b93a70353317811afea.png" referrerpolicy="no-referrer"></p>
+<p>我做过这个模块官方文档的翻译，在这里直接引用了。</p>
+<p>概率滤镜将输入图视为概率密度函数，并创建一个根据该密度函数随机散射单个像素点的输出蒙版。这对于物件放置以及上色十分有用。</p>
+<p>Probability Type（概率类型）：使用哪种分布模型。目前只有一种选择—在地图上均匀分布像素点。</p>
+<p>Bias（偏离）：偏离参数规定根据输入端数据随机创建白色像素的概率。调整此值将导致创建更多或更少数量的点。偏离值为0将不产生输出，偏离值为1将产生全白遮罩。默认值为0.5。</p>
+<p>Strength（强度）：施加偏离后，该参数将进一步降低创建点的可能性。值为1.0无效，而值为0将确保不创建任何点。</p>
+<p>结合以上内容，有几个例子：</p>
+<p>偏离值为1且强度值为0.5时，所有位置生成点的机会相同（偏离1.0），但是强度为0.5时，意味着输出将是随机的白色噪声，而不是纯白色。</p>
+<p>0.5的偏离值和1.0的强度值将创建一个最类似于输入值的贴图，只是单点绘制而不是连续绘制的。</p>
+<h3 >#2-3-15 滤镜：Ramp</h3>
+<p><img src="http://thingy.top/view.php/a704d3b1c313e26394b16496ab44381f.png" referrerpolicy="no-referrer"></p>
