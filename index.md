@@ -1,3 +1,5 @@
+[TOC] 
+
 # **第零章 我是 WM World Machine你学会了吗**
 
 ## **#0-0 序言**
@@ -72,7 +74,7 @@ WM的操作逻辑是节点操作，一般地形制作流程为形体－调整－
 
 ## **#1-? 随机应变**
 
-我们终于获得了一个像山的形状，但这还不够，我们注意到一些地方由于侵蚀的效果，已经碰到了地形的底部。我们只需要再摆下一个Advanced Perlin模块，并找到Combiner中的Combiner![](http://thingy.top/view.php/6375e94e4ccb07b1ec82d5803ff20361.png){width="0.3125in" height="0.3229166666666667in"}模块。将Advanced Perlin中的预设选择为Swiss Cheese，适当拉低Middle elevation的值，然后将Combiner的模式修改为Screen（防止地形顶破限高)，并将强度拉到1，并以这样的方式连接模块。可以看到地形碰底的问题已经得到解决。
+我们终于获得了一个像山的形状，但这还不够，我们注意到一些地方由于侵蚀的效果，已经碰到了地形的底部。我们只需要再摆下一个Advanced Perlin模块，并找到Combiner中的Combiner![](http://thingy.top/view.php/6375e94e4ccb07b1ec82d5803ff20361.png)模块。将Advanced Perlin中的预设选择为Swiss Cheese，适当拉低Middle elevation的值，然后将Combiner的模式修改为Screen（防止地形顶破限高)，并将强度拉到1，并以这样的方式连接模块。可以看到地形碰底的问题已经得到解决。
 
 ![](http://thingy.top/view.php/0aa24cbcc0b6783922ee37e98d10be35.png)
 
@@ -108,7 +110,7 @@ WM的操作逻辑是节点操作，一般地形制作流程为形体－调整－
 
 侵蚀是新手时期最重要的自然化模块。侵蚀的效果还是很显而易见的，可以看到我们的地形上出现了很明显的沟壑。
 
-![](http://thingy.top/view.php/b6428d7e6d90f1c97884b740ac1e4ce3.png){width="5.570138888888889in" height="2.754166666666667in"}
+![](http://thingy.top/view.php/b6428d7e6d90f1c97884b740ac1e4ce3.png)
 
 接下来简单介绍一下比较重要的参数。也许描述不是特别十分非常严谨，但是应该可能大概估计是足够新手使用了。
 
@@ -128,7 +130,7 @@ Hardness Mask：接入灰度图的值会乘上参数中的Rock Hardness，乘积
 
 当然，作为一个地形圈资深养老人，我十分建议大家去试试WM给的参数，不必自己一个一个去调，在参数的基础上作出一点修改即可。比如Deeply Carved预设，我们适当拉低一些岩石硬度，直接就有硬山了。
 
-![](http://thingy.top/view.php/e179349000577ba66588ac61d9c69f38.png){width="7.254166666666666in" height="3.8402777777777777in"}
+![](http://thingy.top/view.php/e179349000577ba66588ac61d9c69f38.png)
 
 ### **#2-1-2 自然化：风化（Thermal Weathering）**
 
@@ -136,7 +138,7 @@ Hardness Mask：接入灰度图的值会乘上参数中的Rock Hardness，乘积
 
 侵蚀你就是歌姬吧，你来风化大街，指定没你好果汁吃嗷
 
-![](http://thingy.top/view.php/8a69de679798477208e5b62d117e3bce.png){width="7.259027777777778in" height="3.4854166666666666in"}
+![](http://thingy.top/view.php/8a69de679798477208e5b62d117e3bce.png)
 
 Talus Production（碎石量）&Intensity（强度）：控制产生碎石的多少
 
