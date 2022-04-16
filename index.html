@@ -1,3 +1,4 @@
+<div>[TOC]</div>
 <h1 ><strong>第零章 我是 WM World Machine你学会了吗</strong></h1>
 <h2 ><strong>#0-0 序言</strong></h2>
 <h2 ><strong>#0-1 下载与安装</strong></h2>
@@ -248,3 +249,59 @@
 <p>Number Of Terraces：阶梯化层数。</p>
 <p>Terrace Shape：效果强度。越接近0.5越弱，且小于0.5向外凸起，大于0.5向内凿出。</p>
 <p>Terrace Layering：在各阶梯间填加的小一点的阶梯的层数。</p>
+<h2 ><strong>#2-4 合成器</strong></h2>
+<p>对两种地形进行合并的模块。</p>
+<h3 ><strong>#2-4-1 Combiner</strong></h3>
+<p>一共有十四种合成方法。参数只有一个Strength，控制合成强度。由于合成方法众多且难以用文字叙述，这里只介绍几个最为常用的。</p>
+<p>Average：求平均值，参数为0.5时两个输入的权重相同，越接近0第一个输入的权重越大，越接近1第二个输入的权重越大。</p>
+<p>Add：加法。</p>
+<p>Subtract：减法。</p>
+<p>Multiply：乘法。</p>
+<p>Screen：类似Add，但这个模块不会碰到高度上限，综合地形叠加地形常用。</p>
+<p>Max：保留最大值。</p>
+<p>Min：保留最小值。</p>
+<h3 ><strong>#2-4-2 Multi Chooser</strong></h3>
+<p>将地形按照高度分为多个小块后，在对应高度使用对应接口的地形进行操作。可以实现阶梯化效果。</p>
+<p>Number Of Inputs：输入接口和分层的数量。</p>
+<p>Transition Contrast：可以简单理解为阶梯化程度，这样说并不准确。</p>
+<p>图片中，我将接口数量设置为2，在第一个接口连接了高低落差很大的噪波，第二个接口接入平面，第三个接口接入Voronoi。可以看到高度高的地方变为了Voronoi，而高度低的地方变成了平面。</p>
+<p><img src="http://thingy.top/view.php/8da27a6a871efd613658f1a0e65927d6.png" referrerpolicy="no-referrer"></p>
+<h2 ><strong>#2-5 选择器</strong></h2>
+<p>选择器可以帮助你选择出各种遮罩以便限定模块操作范围。模块颜色为紫色。</p>
+<h3 ><strong>#2-5-1 选择器：光照角选择（Select Aspect）</strong></h3>
+<p><img src="http://thingy.top/view.php/fcafb6022a83ecd1ca04b5f61ef739ae.png" referrerpolicy="no-referrer"></p>
+<p>Heading：太阳方向。0对应北方，随着参数变大逆时针旋转。</p>
+<p>Elevation：太阳高度。0对应水平，90对应垂直。</p>
+<h3 ><strong>#2-5-2 选择器：Select Color</strong></h3>
+<p>选择颜色。</p>
+<h3 ><strong>#2-5-3 选择器：Select Convexity</strong></h3>
+<p>选择凹凸。Strength参数控制遮罩的对比度。</p>
+<h3 ><strong>#2-5-4 选择器：Select Height</strong></h3>
+<p>选择高度。通过Range来控制选择范围，Falloff控制过渡范围，选择Invert Selection可以反选（起到节省一个Inverter的作用）。</p>
+<h3 ><strong>#2-5-5 选择器：Select Roughness</strong></h3>
+<p>选择粗糙度高的地方。</p>
+<p><img src="http://thingy.top/view.php/be08f6e637f4f77999a22dbaa1dd9138.png" referrerpolicy="no-referrer"></p>
+<h3 ><strong>#2-5-6 选择器：Select Slope</strong></h3>
+<p>选择坡度。通过Range来控制选择范围，Falloff控制过渡范围，选择Invert Selection可以反选（起到节省一个Inverter的作用）。</p>
+<h3 ><strong>#2-5-7 选择器：Select Wetness</strong></h3>
+<p>选择湿度。Moisture控制水汽浓度。</p>
+<h2 ><strong>#2-6 预览器&amp;导出器</strong></h2>
+<p>旧版本的WM里面这两种模块就在一起，加上制作MC地形需要的相关模块少，因此合在一起讲。两类模块都是红色。</p>
+<h3 ><strong>#2-6-1 预览器：Overlay View</strong></h3>
+<p>将灰度图或彩图直接覆盖在地形上，参数控制覆盖程度。</p>
+<h3 ><strong>#2-6-2 预览器：Scene View</strong></h3>
+<p>4027更新后功能极为丰富，可以预览地形、（PBR）材质、水系、法线、环境光遮蔽等的效果。</p>
+<h3 ><strong>#2-6-3 导出器：Height Output</strong></h3>
+<p>导出灰度图用。</p>
+<p>Filename：文件名以及文件路径。</p>
+<p>File Format：文件格式。</p>
+<p>Output File on every Build：是否在每次构建时都进行导出。</p>
+<p>Participate in Tiled Builds：是否在进行分块导出时导出该文件。</p>
+<p>Write to Disk：直接导出该图片。</p>
+<h3 ><strong>#2-6-4 导出器：Bitmap Output</strong></h3>
+<p>导出彩图用。</p>
+<p>Filename：文件名以及文件路径。</p>
+<p>File Format：文件格式。</p>
+<p>Output File on every Build：是否在每次构建时都进行导出。</p>
+<p>Participate in Tiled Builds：是否在进行分块导出时导出该文件。</p>
+<p>Write to Disk：直接导出该图片。</p>
