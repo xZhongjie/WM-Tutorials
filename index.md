@@ -1,5 +1,3 @@
-[TOC] 
-
 # **第零章 我是 WM World Machine你学会了吗**
 
 ## **#0-0 序言**
@@ -60,7 +58,7 @@ WM的操作逻辑是节点操作，一般地形制作流程为形体－调整－
 
 ## **#1-2 调整形状**
 
-随后，拿出Filter栏中的Displacement![](http://thingy.top/view.php/405ceca14b97453d7d2fb30db82a4950.png){width="0.3958333333333333in" height="0.375in"}模块和Generator中的Basic Noise![](http://thingy.top/view.php/46072f39b97ff243db15935c8640d479.png){width="0.3333333333333333in" height="0.34375in"}模块，以这种方式连接，对我们之前Advanced Perlin的地形进行一些扭曲。Displacement模块的Distance需要适当调整为1.5km左右，Direction视情况决定是否调整。
+随后，拿出Filter栏中的Displacement![](http://thingy.top/view.php/405ceca14b97453d7d2fb30db82a4950.png)模块和Generator中的Basic Noise![](http://thingy.top/view.php/46072f39b97ff243db15935c8640d479.png)模块，以这种方式连接，对我们之前Advanced Perlin的地形进行一些扭曲。Displacement模块的Distance需要适当调整为1.5km左右，Direction视情况决定是否调整。
 
 ![](http://thingy.top/view.php/d2461f47e1e7faea2f6a98f63826b975.png)
 
@@ -152,17 +150,17 @@ Simulation Length（碎石距离）：数越大碎石就滚得越远。
 
 特别需要注意的是，这个模块他的旧版本也特别特别特别好用，这里不过多叙述，只提供给大家两张效果图和对应参数，读者自证不难。
 
-![](http://thingy.top/view.php/d4b7a41aed36c51a58d05d1d6e4d8576.png){width="4.550694444444445in" height="2.1770833333333335in"}
+![](http://thingy.top/view.php/d4b7a41aed36c51a58d05d1d6e4d8576.png)
 
-![](http://thingy.top/view.php/5c1962a761757085296d4c6a415dfe29.png){width="1.8888888888888888in" height="1.6777777777777778in"}
+![](http://thingy.top/view.php/5c1962a761757085296d4c6a415dfe29.png)
 
-![](http://thingy.top/view.php/55d50aa038e62920581ba6c9de66b1c3.png){width="4.569444444444445in" height="2.4208333333333334in"}
+![](http://thingy.top/view.php/55d50aa038e62920581ba6c9de66b1c3.png)
 
-![](http://thingy.top/view.php/1ccf481a91e8fd64d13e64575d2f3c41.png){width="2.057638888888889in" height="1.8173611111111112in"}
+![](http://thingy.top/view.php/1ccf481a91e8fd64d13e64575d2f3c41.png)
 
 ### **#2-1-3 自然化：地层（Strata）**
 
-![](http://thingy.top/view.php/0cdba41acaf6a65d2214253ea38fddab.png){width="4.816666666666666in" height="1.9472222222222222in"}
+![](http://thingy.top/view.php/0cdba41acaf6a65d2214253ea38fddab.png)
 
 你把它理解成阶梯化Pro Max就行，虽然我们还没接触阶梯化（
 
@@ -176,19 +174,19 @@ Layer（层化程度）：字面意思。
 
 Tint（角度）：控制纹理的角度，因为容易和下一个参数弄混，所以干脆放图解释。
 
-![](http://thingy.top/view.php/f1334f787e1ccf2552dcd8b989aa7851.png){width="2.526388888888889in" height="1.5451388888888888in"}
+![](http://thingy.top/view.php/f1334f787e1ccf2552dcd8b989aa7851.png)
 
-![](http://thingy.top/view.php/519eeec5e6feb245138c0b3c5b7b1089.png){width="2.4819444444444443in" height="1.5555555555555556in"}
+![](http://thingy.top/view.php/519eeec5e6feb245138c0b3c5b7b1089.png)
 
 Heading（方向）：控制纹理倾斜方向，放图。
 
-![](http://thingy.top/view.php/941d6cfd79b1d8f210af40847a691cbf.png){width="2.3958333333333335in" height="1.9027777777777777in"}
+![](http://thingy.top/view.php/941d6cfd79b1d8f210af40847a691cbf.png)
 
-![](http://thingy.top/view.php/26662b9109489d22e87d6959180a788a.png){width="2.1166666666666667in" height="1.9131944444444444in"}
+![](http://thingy.top/view.php/26662b9109489d22e87d6959180a788a.png)
 
 ### **#2-1-4 自然化：雪（Snow）**
 
-![](http://thingy.top/view.php/9fe0d833e61758810af596b7e10468bc.png){width="6.311805555555556in" height="2.734722222222222in"}
+![](http://thingy.top/view.php/9fe0d833e61758810af596b7e10468bc.png)
 
 Snowfall（降雪量）：值越大，雪对地形的平滑程度越高。
 
@@ -202,7 +200,7 @@ Snowmelt Mask Input（融雪遮罩输入）：值越大，第三个输入端口�
 
 这铸币模块属于是特别有用的，而且不可替代，但是实在是太铸币了，在WM的某次逆天改版之后，给的Water不是很精确，导致做水流的时候一堆破事。
 
-![](http://thingy.top/view.php/e46410172e8f72bed8b4a207bf1898d2.png){width="5.889583333333333in" height="2.825in"}
+![](http://thingy.top/view.php/e46410172e8f72bed8b4a207bf1898d2.png)
 
 Sea Level（海面高度）：字面意思。点那个按钮可以自己对应场景设置的海平面高度。
 
@@ -216,9 +214,9 @@ Underwater Smoothing（水下平滑程度）：字面意思。
 
 这里只介绍参数，河流制作在后续会系统讲解。参数直接引用我进阶视频教程中的，懒狗了属于是。
 
-![](http://thingy.top/view.php/e8990d654b9f53f1c04a7fb7a325349e.png){width="6.191666666666666in" height="3.0555555555555554in"}
+![](http://thingy.top/view.php/e8990d654b9f53f1c04a7fb7a325349e.png)
 
-![](http://thingy.top/view.php/ba4fc3f2d0af3598238629e47baf0e93.png){width="4.8909722222222225in" height="1.6152777777777778in"}
+![](http://thingy.top/view.php/ba4fc3f2d0af3598238629e47baf0e93.png)
 
 ## **#2-2 生成器**
 
@@ -226,7 +224,7 @@ Underwater Smoothing（水下平滑程度）：字面意思。
 
 ### **#2-2-1 生成器：高级柏林噪波（Advanced Perlin）**
 
-![](http://thingy.top/view.php/0e389779fcb3f899161015a9bc34e7dc.png){width="5.844444444444444in" height="3.3756944444444446in"}
+![](http://thingy.top/view.php/0e389779fcb3f899161015a9bc34e7dc.png)
 
 接口方面，也就形状、扭曲、精度三个指导接口，挺简单的，指导强度在参数里面隐藏起来了，勾选上显示更多参数就显示了。参数简单介绍几个，因为我懒，直接贴一个3026 版本的模块界面汉化图。
 
@@ -246,15 +244,15 @@ Steepness：噪波起伏。
 
 Middle Elevation：中位高度。
 
-![](http://thingy.top/view.php/1ab67252db4d258340f441ac7d4da447.png){width="3.204861111111111in" height="2.3027777777777776in"}
+![](http://thingy.top/view.php/1ab67252db4d258340f441ac7d4da447.png)
 
 ![](http://thingy.top/view.php/610592e654ea6a3fd12589af3aee78ef.png)
 
 ### **#2-2-2 生成器：基础噪波（Basic Noise）**
 
-**和Adv Perlin大同小异，Style有点差别，不再赘述。**
+和Adv Perlin大同小异，Style有点差别，不再赘述。
 
-![](http://thingy.top/view.php/1045ba0dc873e0cc6dbd5e72462a3e94.png){width="5.688888888888889in" height="3.19375in"}
+![](http://thingy.top/view.php/1045ba0dc873e0cc6dbd5e72462a3e94.png)
 
 ### **#2-2-3 生成器：Color**
 
@@ -268,9 +266,9 @@ Middle Elevation：中位高度。
 
 从外部导入地形的模块，应该没有什么好说的，调Type可以修改导入文件的类型，Width调长宽，一般来说知道这点就够了，也许你足够牛逼的时候还会接触到重采样方式，其他估计是永远用不到，但是3026版汉化依旧汉化了每一个选项，有需要可以看看。
 
-![](http://thingy.top/view.php/c8187e32590f8b2a3b7bc45f53a05d81.png){width="2.7715277777777776in" height="2.202777777777778in"}
+![](http://thingy.top/view.php/c8187e32590f8b2a3b7bc45f53a05d81.png)
 
-![](http://thingy.top/view.php/ea468680a678d46e6b1fdf8474c6297f.png){width="2.7666666666666666in" height="2.198611111111111in"}
+![](http://thingy.top/view.php/ea468680a678d46e6b1fdf8474c6297f.png)
 
 ### **#2-2-6 生成器：Gradient**
 
