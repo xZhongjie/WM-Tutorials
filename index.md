@@ -1,3 +1,30 @@
+------
+
+### 本文档以署名-相同方式共享 4.0 国际 (CC BY-SA 4.0)共享，除引用的部分，其权利属于各自作者。
+
+这是该协议的人类可读的摘要，不能够替代许可原文（https://creativecommons.org/licenses/by-sa/4.0/legalcode.zh-Hans）。
+
+#### 您可以自由地：
+
+- **共享** — 在任何媒介以任何形式复制、发行本作品
+- **演绎** — 修改、转换或以本作品为基础进行创作
+- 在任何用途下，甚至商业目的。
+
+- 只要你遵守许可协议条款，许可人就无法收回你的这些权利。
+
+#### 惟须遵守下列条件：
+
+- **署名** — 您必须给出[适当的署名](https://creativecommons.org/licenses/by-sa/4.0/deed.zh#)，提供指向本许可协议的链接，同时[标明是否（对原始作品）作了修改](https://creativecommons.org/licenses/by-sa/4.0/deed.zh#)。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
+- **相同方式共享** — 如果您再混合、转换或者基于本作品进行创作，您必须基于[与原先许可协议相同的许可协议](https://creativecommons.org/licenses/by-sa/4.0/deed.zh#) 分发您贡献的作品。
+
+- **没有附加限制** — 您不得适用法律术语或者 [技术措施](https://creativecommons.org/licenses/by-sa/4.0/deed.zh#) 从而限制其他人做许可协议允许的事情。
+
+------
+
+**以下部分是教程正文。**
+
+------
+
 # **第零章 我是 WM World Machine你学会了吗**
 
 ## **#0-0 序言**
@@ -36,7 +63,7 @@ WM的操作逻辑是节点操作，一般地形制作流程为形体－调整－
 
 ## **#0-4 尺寸对应**
 
-地形圈普遍认为，地形的1比1即指1方块等于10m。根据该规则，应将工程设置页面中的子选项卡Scene Setup中Width（或Breath）的值与Resolution的值设置为 x km 与 100x 。1k地形即指10.24km x 10.24km的地形，其他尺寸同理。例如Width为10.24km，Breath为10.24km，Resolution为1024x1024。这就是所说的1k地形。如果需要非正方形尺寸地形，只需要修改Square Aspect为Any Aspect Ratio。如果您的尺寸设置正确，Detail scale的值应为10.00m/pixel。WM默认的地形高度为4km（400方块），需要将Project Setup选项卡中Dimension Preference的值根据需要修改为2.56km（256方块）或3.84km（384方块）等等。
+地形圈普遍认为，Minecraft地形到WorldMachine地图的比例一般是1个方格的长度（Minecraft中的1米）相当于WM中的10m的长度。根据该规则，应将工程设置页面中的子选项卡Scene Setup中Width（或Breath）的值与Resolution的值设置为 x km 与 100x 。1k地形即指10.24km x 10.24km的地形，其他尺寸同理。例如Width为10.24km，Breath为10.24km，Resolution为1024x1024。这就是所说的1k地形。如果需要非正方形尺寸地形，只需要修改Square Aspect为Any Aspect Ratio。如果您的尺寸设置正确，Detail scale的值应为10.00m/pixel。WM默认的地形高度为4km（400方块），需要将Project Setup选项卡中Dimension Preference的值根据需要修改为2.56km（256方块）或3.84km（384方块）等等。
 
 ![](http://thingy.top/view.php/e1b2f048e163172c7de1c179f19ca589.png)
 
@@ -48,7 +75,7 @@ WM的操作逻辑是节点操作，一般地形制作流程为形体－调整－
 
 随后，我们可以在模块栏中Generator一栏，选择Advanced Perlin（高级柏林噪声）![](http://thingy.top/view.php/c3c9aebb26862c12a1866c8f47ce073a.png)，这是一个十分常用的模块。
 
-我们就可以得到这样的性质，称之为噪波，这是多数地形的开始。
+我们就可以得到这样的形状，称之为噪波，这是多数地形的开始。
 
 ![](http://thingy.top/view.php/550a0dc4020804bf73a9720e63ecd267.png)
 
@@ -118,7 +145,7 @@ Rock Hardness（岩石硬度）：数越大沟越深。
 
 Sediment Carry Amount（泥沙量）：数越大沉积越重。
 
-Geological-time Enhancement（冰川侵蚀/地质时间增强）：勾上了就会对地形主体以外的地方产生作用。
+Geological-time Enhancement（冰川侵蚀/地质时间增强）：打开后会增强侵蚀效果。如果关闭，多数情况下侵蚀模块对地形主体以外的地方产生作用的现象将会消失。
 
 侵蚀模块有三个入口，第三个没啥用。
 
@@ -288,15 +315,15 @@ Radius（半径）：形状应覆盖多大的面积。默认值为8km，恰好�
 
 Type（类型）：
 
-球形Spherical:在边缘急剧下降的圆形轮廓。
+球形Spherical：在边缘急剧下降的圆形轮廓。
 
-高斯Gaussian:呈高斯分布的丘形轮廓。
+高斯Gaussian：呈高斯分布的丘形轮廓。
 
-钻石Diamond:看起来很像金字塔的不断倾斜的轮廓。
+钻石Diamond：看起来很像金字塔的不断倾斜的轮廓。
 
-正方形Square:方形轮廓。它保持水平，直到边缘急剧下降到零为止。
+正方形Square：方形轮廓。它保持水平，直到边缘急剧下降到零为止。
 
-锥形Cone:在所有方向上恒定向下倾斜到零。
+锥形Cone：在所有方向上恒定向下倾斜到零。
 
 指数Exponential：临近中心处下降快而边缘处下降慢，类似幂函数。
 
