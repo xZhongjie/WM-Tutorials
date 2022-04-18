@@ -293,7 +293,7 @@ Middle Elevation：中位高度。
 
 ### **#2-2-3 生成器：Color**
 
-颜色生成器是一种产生恒定颜色的简单模块。默认情况下，创建一个全图范围的单色。但是，通过使用遮罩输入或将输出与选择遮罩组合，颜色生成器将成为上色工作的基础。
+颜色生成器是生成纯色的简单模块。默认情况下，创建一个全图范围的单色。但是，通过使用遮罩输入或将输出与选择遮罩组合，颜色生成器将成为上色工作的基础。
 
 ### **#2-2-4 生成器：Constant**
 
@@ -647,11 +647,72 @@ Participate in Tiled Builds：是否在进行分块导出时导出该文件。
 
 Write to Disk：直接导出该图片。
 
-## 第三章 基本思路
+# **第三章 基本思路**
 
 //等待更新
 
-## 第四章 基础效果
+# **第四章 基础效果**
 
 //等待更新
 
+# **附录**
+
+## **附录-1 地形圈指路牌**
+
+衰变死猫的Worldmachine视频教程
+
+https://space.bilibili.com/3164992/channel/seriesdetail?sid=983629
+
+花开的WM启动问题处理文档
+
+https://www.mcbbs.net/thread-1276091-1-2.html
+
+花开的GAEA教程
+
+https://www.mcbbs.net/thread-1301102-1-1.html
+
+花开的Chunky汉化
+
+https://www.mcbbs.net/thread-1246420-1-1.html
+
+花开的WM汉化群
+
+854909057
+
+黑霞的Terragen交流群
+
+431201361
+
+茶馆笔刷包
+
+https://www.mcbbs.net/thread-1299394-1-1.html
+
+茶馆下载站
+
+http://thingy.top/
+
+243的源石晶体制作教程
+
+https://www.bilibili.com/video/BV1T7411k7V8
+
+珀尔的Worldpainter图文教程
+
+https://tieba.baidu.com/p/4971955173
+
+介介子的WM进阶视频教程
+
+https://space.bilibili.com/231232390
+
+### **附录-2 鸣谢**
+
+花开
+
+Minecraft地形师茶馆
+
+CTI中华地形师协会
+
+地形建模交流进步群
+
+### **附录-3 后记**
+
+//等待更新
