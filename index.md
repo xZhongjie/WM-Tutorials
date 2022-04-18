@@ -25,6 +25,8 @@
 
 ------
 
+![](http://thingy.top/view.php/7973824b14531975643cb68ecbd76cbb.png)
+
 # **第零章 我是 WM World Machine你学会了吗**
 
 ## **#0-0 序言**
