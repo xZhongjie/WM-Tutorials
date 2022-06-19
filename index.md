@@ -25,7 +25,7 @@
 
 ------
 
-![](http://thingy.top/view.php/7973824b14531975643cb68ecbd76cbb.png)
+![](https://thingy.top/view.php/7973824b14531975643cb68ecbd76cbb.png)
 
 # **第零章 我是 WM World Machine你学会了吗**
 
@@ -53,13 +53,13 @@ WM的操作逻辑是节点操作，一般地形制作流程为形体－调整－
 
 需要注意的是，模块名称左侧还会亮起指示灯，青绿色表示正常工作，黄绿色表示尚未构建，蓝色表示已构建但内容已被删除，红色表示接入方法有误，红叉表示WM工作异常。
 
-![](http://thingy.top/view.php/fcb265ff3b5ef00c370bd98a1d529204.png)
+![](https://thingy.top/view.php/fcb265ff3b5ef00c370bd98a1d529204.png)
 
 ## **#0-3 基本操作**
 
 开始之前，先简单将WM界面分个区，方便介绍。
 
-![](http://thingy.top/view.php/e77227686b59d607684091f0d5cbded3.png)
+![](https://thingy.top/view.php/e77227686b59d607684091f0d5cbded3.png)
 
 模块栏：取模块的地方，没什么好说的。
 
@@ -71,13 +71,13 @@ WM的操作逻辑是节点操作，一般地形制作流程为形体－调整－
 
 至于右键模块弹出的窗口，这里直接借用花开汉化版的翻译，相关快捷键也有体现，不再赘述。
 
-![未标题-1](http://thingy.top/view.php/70c3a0b444bc5ce32fe85573c8fe27f6.png)
+![未标题-1](https://thingy.top/view.php/70c3a0b444bc5ce32fe85573c8fe27f6.png)
 
 ## **#0-4 尺寸对应**
 
-地形圈普遍认为，Minecraft地形到WorldMachine地图的比例一般是1个方格的长度（Minecraft中的1米）相当于WM中的10m的长度。根据该规则，应将工程设置页面中的子选项卡Scene Setup中Width（或Breath）的值与Resolution的值设置为 x km 与 100x 。1k地形即指10.24km x 10.24km的地形，其他尺寸同理。例如Width为10.24km，Breath为10.24km，Resolution为1024x1024。这就是所说的1k地形。如果需要非正方形尺寸地形，只需要修改Square Aspect为Any Aspect Ratio。如果您的尺寸设置正确，Detail scale的值应为10.00m/pixel。WM默认的地形高度为4km（400方块），需要将Project Setup选项卡中Dimension Preference的值根据需要修改为2.56km（256方块）或3.84km（384方块）等等。
+地形圈普遍认为，Minecraft地形到WorldMachine地图的比例一般是1个方格的长度（Minecraft中的1米）相当于WM中的10m的长度。根据该规则，应将工程设置页面中的子选项卡Scene Setup中Width（或Breath）的值与Resolution的值设置为 x km 与 100x 。1k地形即指10.24km x 10.24km的地形，其他尺寸同理。例如Width为10.24km，Breadth为10.24km，Resolution为1024x1024。这就是所说的1k地形。如果需要非正方形尺寸地形，只需要修改Square Aspect为Any Aspect Ratio。如果您的尺寸设置正确，Detail scale的值应为10.00m/pixel。WM默认的地形高度为4km（400方块），需要将Project Setup选项卡中Dimension Preference的值根据需要修改为2.56km（256方块）或3.84km（384方块）等等。
 
-![](http://thingy.top/view.php/e1b2f048e163172c7de1c179f19ca589.png)
+![](https://thingy.top/view.php/e1b2f048e163172c7de1c179f19ca589.png)
 
 # 第一章 **年轻人的第一个WM工程**
 
@@ -85,55 +85,55 @@ WM的操作逻辑是节点操作，一般地形制作流程为形体－调整－
 
 这里以制作一个2k山区为例，为大家介绍具体的WM地形制作流程。首先根据#0-4中所教，创建一个2k世界。
 
-随后，我们可以在模块栏中Generator一栏，选择Advanced Perlin（高级柏林噪声）![](http://thingy.top/view.php/c3c9aebb26862c12a1866c8f47ce073a.png)，这是一个十分常用的模块。
+随后，我们可以在模块栏中Generator一栏，选择Advanced Perlin（高级柏林噪声）![](https://thingy.top/view.php/c3c9aebb26862c12a1866c8f47ce073a.png)，这是一个十分常用的模块。
 
 我们就可以得到这样的形状，称之为噪波，这是多数地形的开始。
 
-![](http://thingy.top/view.php/550a0dc4020804bf73a9720e63ecd267.png)
+![](https://thingy.top/view.php/550a0dc4020804bf73a9720e63ecd267.png)
 
 我们需要对其进行一些参数调整，双击模块，将Scale的值调到20km，适当修改Steepness和Middle elevation的值，得到这样的形状。大家不妨自行尝试，调整各个参数，以便了解参数对应的效果。
 
-![](http://thingy.top/view.php/fbf97c6d68304667740e68095ba1ff8c.png)
+![](https://thingy.top/view.php/fbf97c6d68304667740e68095ba1ff8c.png)
 
 ## **#1-2 调整形状**
 
-随后，拿出Filter栏中的Displacement![](http://thingy.top/view.php/405ceca14b97453d7d2fb30db82a4950.png)模块和Generator中的Basic Noise![](http://thingy.top/view.php/46072f39b97ff243db15935c8640d479.png)模块，以这种方式连接，对我们之前Advanced Perlin的地形进行一些扭曲。Displacement模块的Distance需要适当调整为1.5km左右，Direction视情况决定是否调整。
+随后，拿出Filter栏中的Displacement![](https://thingy.top/view.php/405ceca14b97453d7d2fb30db82a4950.png)模块和Generator中的Basic Noise![](https://thingy.top/view.php/46072f39b97ff243db15935c8640d479.png)模块，以这种方式连接，对我们之前Advanced Perlin的地形进行一些扭曲。Displacement模块的Distance需要适当调整为1.5km左右，Direction视情况决定是否调整。
 
-![](http://thingy.top/view.php/d2461f47e1e7faea2f6a98f63826b975.png)
+![](https://thingy.top/view.php/d2461f47e1e7faea2f6a98f63826b975.png)
 
-![](http://thingy.top/view.php/ab5b73aef1647c735aaf2ecbae5ba49a.png)
+![](https://thingy.top/view.php/ab5b73aef1647c735aaf2ecbae5ba49a.png)
 
 ## **#1-3-1 自然化处理：侵蚀**
 
-再到Natural栏中找到Erosion（侵蚀）![](http://thingy.top/view.php/f16c3a9b1c4d24701e2ab6e5b41cf935.png)模块，连接到Displacement的后面。在右上角Presents栏中，选择Deeply Carved预设。WM自带的许多预设都十分好用。
+再到Natural栏中找到Erosion（侵蚀）![](https://thingy.top/view.php/f16c3a9b1c4d24701e2ab6e5b41cf935.png)模块，连接到Displacement的后面。在右上角Presents栏中，选择Deeply Carved预设。WM自带的许多预设都十分好用。
 
-![](http://thingy.top/view.php/941ee351fe30f5c69e9a4574c449fa4d.png) 
+![](https://thingy.top/view.php/941ee351fe30f5c69e9a4574c449fa4d.png) 
 
 ## **#1-? 随机应变**
 
-我们终于获得了一个像山的形状，但这还不够，我们注意到一些地方由于侵蚀的效果，已经碰到了地形的底部。我们只需要再摆下一个Advanced Perlin模块，并找到Combiner中的Combiner![](http://thingy.top/view.php/6375e94e4ccb07b1ec82d5803ff20361.png)模块。将Advanced Perlin中的预设选择为Swiss Cheese，适当拉低Middle elevation的值，然后将Combiner的模式修改为Screen（防止地形顶破限高)，并将强度拉到1，并以这样的方式连接模块。可以看到地形碰底的问题已经得到解决。
+我们终于获得了一个像山的形状，但这还不够，我们注意到一些地方由于侵蚀的效果，已经碰到了地形的底部。我们只需要再摆下一个Advanced Perlin模块，并找到Combiner中的Combiner![](https://thingy.top/view.php/6375e94e4ccb07b1ec82d5803ff20361.png)模块。将Advanced Perlin中的预设选择为Swiss Cheese，适当拉低Middle elevation的值，然后将Combiner的模式修改为Screen（防止地形顶破限高)，并将强度拉到1，并以这样的方式连接模块。可以看到地形碰底的问题已经得到解决。
 
-![](http://thingy.top/view.php/0aa24cbcc0b6783922ee37e98d10be35.png)
+![](https://thingy.top/view.php/0aa24cbcc0b6783922ee37e98d10be35.png)
 
-![](http://thingy.top/view.php/7fdf8625b686533722ca5148ed845751.png)
+![](https://thingy.top/view.php/7fdf8625b686533722ca5148ed845751.png)
 
 ## **#1-3-2 自然化处理：风化**
 
-我们再到Natural栏中找到Thermal Weathering（热力风化）![](http://thingy.top/view.php/3955726ae2d322d3e13ce6a323c5bd1d.png)模块，直接接入即可。但是我们好像很难发现地形有了什么变化，不妨试着打开3D预览页面中的比较线![](http://thingy.top/view.php/1ee2dde29f8cc9a733d28dd64d78d0b1.png)，这样我们就可以直观看出地形前后差距了。可以发现，风化过后的地形，高坡度地区产生了一些碎石。
+我们再到Natural栏中找到Thermal Weathering（热力风化）![](https://thingy.top/view.php/3955726ae2d322d3e13ce6a323c5bd1d.png)模块，直接接入即可。但是我们好像很难发现地形有了什么变化，不妨试着打开3D预览页面中的比较线![](https://thingy.top/view.php/1ee2dde29f8cc9a733d28dd64d78d0b1.png)，这样我们就可以直观看出地形前后差距了。可以发现，风化过后的地形，高坡度地区产生了一些碎石。
 
-1![](http://thingy.top/view.php/a5657a3185c2305a64595a1ec272fe14.png)
+1![](https://thingy.top/view.php/a5657a3185c2305a64595a1ec272fe14.png)
 
 ## **#1-4 上色**
 
-上色较为复杂，这里我们使用上色宏解决。找到工具栏中Macros（宏）一栏，找到Texturing中的Quick Texture摆下，接入后我们就可以快速得到地形上色。宏的本质是多个模块整合到一起，制作方法后续章节再讲。我们再找出View模块栏中的Overlay Preview![](http://thingy.top/view.php/e7c25e62cef2914915d1aa70da9f28cb.png)，上口接入地形，下口接入上色，预览效果。
+上色较为复杂，这里我们使用上色宏解决。找到工具栏中Macros（宏）一栏，找到Texturing中的Quick Texture摆下，接入后我们就可以快速得到地形上色。宏的本质是多个模块整合到一起，制作方法后续章节再讲。我们再找出View模块栏中的Overlay Preview![](https://thingy.top/view.php/e7c25e62cef2914915d1aa70da9f28cb.png)，上口接入地形，下口接入上色，预览效果。
 
-![](http://thingy.top/view.php/e62b875489d99d4de2962f27828fa47a.png)
+![](https://thingy.top/view.php/e62b875489d99d4de2962f27828fa47a.png)
 
 ## **#1-5 导出**
 
-我们的地形已经制作完成了。接下来找出Output栏中的，Height Output![](http://thingy.top/view.php/ffa2d4956b1681201d0205a1181f1d58.png)和Bitmap Output<img src="http://thingy.top/view.php/ec0e4e06ba14fecbbb80b09e6c7c2def.png" style="zoom:120%;" />，分别将地形和上色接进去，修改文件名。然后打开导出页面![](http://thingy.top/view.php/03c86c732ccc97f3c2f0ee4d0fe8e1b7.png)，选择Export All，我们就可以在显示的目录中找到保存好的两张图片。
+我们的地形已经制作完成了。接下来找出Output栏中的，Height Output![](https://thingy.top/view.php/ffa2d4956b1681201d0205a1181f1d58.png)和Bitmap Output<img src="https://thingy.top/view.php/ec0e4e06ba14fecbbb80b09e6c7c2def.png" style="zoom:120%;" />，分别将地形和上色接进去，修改文件名。然后打开导出页面![](https://thingy.top/view.php/03c86c732ccc97f3c2f0ee4d0fe8e1b7.png)，选择Export All，我们就可以在显示的目录中找到保存好的两张图片。
 
-![](http://thingy.top/view.php/23b4e28fa32897fe4aeb653e0bc2aa53.png)
+![](https://thingy.top/view.php/23b4e28fa32897fe4aeb653e0bc2aa53.png)
 
 # 第二章 **模块效果**
 
@@ -147,7 +147,7 @@ WM的操作逻辑是节点操作，一般地形制作流程为形体－调整－
 
 侵蚀是新手时期最重要的自然化模块。侵蚀的效果还是很显而易见的，可以看到我们的地形上出现了很明显的沟壑。
 
-![](http://thingy.top/view.php/b6428d7e6d90f1c97884b740ac1e4ce3.png)
+![](https://thingy.top/view.php/b6428d7e6d90f1c97884b740ac1e4ce3.png)
 
 接下来简单介绍一下比较重要的参数。也许描述不是特别十分非常严谨，但是应该可能大概估计是足够新手使用了。
 
@@ -167,7 +167,7 @@ Hardness Mask：接入灰度图的值会乘上参数中的Rock Hardness，乘积
 
 当然，作为一个地形圈资深养老人，我十分建议大家去试试WM给的参数，不必自己一个一个去调，在参数的基础上作出一点修改即可。比如Deeply Carved预设，我们适当拉低一些岩石硬度，直接就有硬山了。
 
-![](http://thingy.top/view.php/e179349000577ba66588ac61d9c69f38.png)
+![](https://thingy.top/view.php/e179349000577ba66588ac61d9c69f38.png)
 
 ### **#2-1-2 自然化：风化（Thermal Weathering）**
 
@@ -175,7 +175,7 @@ Hardness Mask：接入灰度图的值会乘上参数中的Rock Hardness，乘积
 
 侵蚀你就是歌姬吧，你来风化大街，指定没你好果汁吃嗷
 
-![](http://thingy.top/view.php/8a69de679798477208e5b62d117e3bce.png)
+![](https://thingy.top/view.php/8a69de679798477208e5b62d117e3bce.png)
 
 Talus Production（碎石量）&Intensity（强度）：控制产生碎石的多少
 
@@ -189,17 +189,17 @@ Simulation Length（碎石距离）：数越大碎石就滚得越远。
 
 特别需要注意的是，这个模块他的旧版本也特别特别特别好用，这里不过多叙述，只提供给大家两张效果图和对应参数，读者自证不难。
 
-![](http://thingy.top/view.php/d4b7a41aed36c51a58d05d1d6e4d8576.png)
+![](https://thingy.top/view.php/d4b7a41aed36c51a58d05d1d6e4d8576.png)
 
-![](http://thingy.top/view.php/5c1962a761757085296d4c6a415dfe29.png)
+![](https://thingy.top/view.php/5c1962a761757085296d4c6a415dfe29.png)
 
-![](http://thingy.top/view.php/55d50aa038e62920581ba6c9de66b1c3.png)
+![](https://thingy.top/view.php/55d50aa038e62920581ba6c9de66b1c3.png)
 
-![](http://thingy.top/view.php/1ccf481a91e8fd64d13e64575d2f3c41.png)
+![](https://thingy.top/view.php/1ccf481a91e8fd64d13e64575d2f3c41.png)
 
 ### **#2-1-3 自然化：地层（Strata）**
 
-![](http://thingy.top/view.php/0cdba41acaf6a65d2214253ea38fddab.png)
+![](https://thingy.top/view.php/0cdba41acaf6a65d2214253ea38fddab.png)
 
 你把它理解成阶梯化Pro Max就行，虽然我们还没接触阶梯化（
 
@@ -213,19 +213,19 @@ Layer（层化程度）：字面意思。
 
 Tint（角度）：控制纹理的角度，因为容易和下一个参数弄混，所以干脆放图解释。
 
-![](http://thingy.top/view.php/f1334f787e1ccf2552dcd8b989aa7851.png)
+![](https://thingy.top/view.php/f1334f787e1ccf2552dcd8b989aa7851.png)
 
-![](http://thingy.top/view.php/519eeec5e6feb245138c0b3c5b7b1089.png)
+![](https://thingy.top/view.php/519eeec5e6feb245138c0b3c5b7b1089.png)
 
 Heading（方向）：控制纹理倾斜方向，放图。
 
-![](http://thingy.top/view.php/941d6cfd79b1d8f210af40847a691cbf.png)
+![](https://thingy.top/view.php/941d6cfd79b1d8f210af40847a691cbf.png)
 
-![](http://thingy.top/view.php/26662b9109489d22e87d6959180a788a.png)
+![](https://thingy.top/view.php/26662b9109489d22e87d6959180a788a.png)
 
 ### **#2-1-4 自然化：雪（Snow）**
 
-![](http://thingy.top/view.php/9fe0d833e61758810af596b7e10468bc.png)
+![](https://thingy.top/view.php/9fe0d833e61758810af596b7e10468bc.png)
 
 Snowfall（降雪量）：值越大，雪对地形的平滑程度越高。
 
@@ -239,7 +239,7 @@ Snowmelt Mask Input（融雪遮罩输入）：值越大，第三个输入端口�
 
 这铸币模块属于是特别有用的，而且不可替代，但是实在是太铸币了，在WM的某次逆天改版之后，给的Water不是很精确，导致做水流的时候一堆破事。
 
-![](http://thingy.top/view.php/e46410172e8f72bed8b4a207bf1898d2.png)
+![](https://thingy.top/view.php/e46410172e8f72bed8b4a207bf1898d2.png)
 
 Sea Level（海面高度）：字面意思。点那个按钮可以自己对应场景设置的海平面高度。
 
@@ -253,9 +253,9 @@ Underwater Smoothing（水下平滑程度）：字面意思。
 
 这里只介绍参数，河流制作在后续会系统讲解。参数直接引用我进阶视频教程中的，懒狗了属于是。
 
-![](http://thingy.top/view.php/e8990d654b9f53f1c04a7fb7a325349e.png)
+![](https://thingy.top/view.php/e8990d654b9f53f1c04a7fb7a325349e.png)
 
-![](http://thingy.top/view.php/ba4fc3f2d0af3598238629e47baf0e93.png)
+![](https://thingy.top/view.php/ba4fc3f2d0af3598238629e47baf0e93.png)
 
 ## **#2-2 生成器**
 
@@ -263,7 +263,7 @@ Underwater Smoothing（水下平滑程度）：字面意思。
 
 ### **#2-2-1 生成器：高级柏林噪波（Advanced Perlin）**
 
-![](http://thingy.top/view.php/0e389779fcb3f899161015a9bc34e7dc.png)
+![](https://thingy.top/view.php/0e389779fcb3f899161015a9bc34e7dc.png)
 
 接口方面，也就形状、扭曲、精度三个指导接口，挺简单的，指导强度在参数里面隐藏起来了，勾选上显示更多参数就显示了。参数简单介绍几个，因为我懒，直接贴一个3026 版本的模块界面汉化图。
 
@@ -283,15 +283,15 @@ Steepness：噪波起伏。
 
 Middle Elevation：中位高度。
 
-![](http://thingy.top/view.php/1ab67252db4d258340f441ac7d4da447.png)
+![](https://thingy.top/view.php/1ab67252db4d258340f441ac7d4da447.png)
 
-![](http://thingy.top/view.php/610592e654ea6a3fd12589af3aee78ef.png)
+![](https://thingy.top/view.php/610592e654ea6a3fd12589af3aee78ef.png)
 
 ### **#2-2-2 生成器：基础噪波（Basic Noise）**
 
 和Adv Perlin大同小异，Style有点差别，不再赘述。
 
-![](http://thingy.top/view.php/1045ba0dc873e0cc6dbd5e72462a3e94.png)
+![](https://thingy.top/view.php/1045ba0dc873e0cc6dbd5e72462a3e94.png)
 
 ### **#2-2-3 生成器：Color**
 
@@ -305,21 +305,21 @@ Middle Elevation：中位高度。
 
 从外部导入地形的模块，应该没有什么好说的，调Type可以修改导入文件的类型，Width调长宽，一般来说知道这点就够了，也许你足够牛逼的时候还会接触到重采样方式，其他估计是永远用不到，但是3026版汉化依旧汉化了每一个选项，有需要可以看看。
 
-![](http://thingy.top/view.php/c8187e32590f8b2a3b7bc45f53a05d81.png)
+![](https://thingy.top/view.php/c8187e32590f8b2a3b7bc45f53a05d81.png)
 
-![](http://thingy.top/view.php/ea468680a678d46e6b1fdf8474c6297f.png)
+![](https://thingy.top/view.php/ea468680a678d46e6b1fdf8474c6297f.png)
 
 ### **#2-2-6 生成器：Gradient**
 
 生成斜面用的模块。没什么好说的。Tilling里面四种模式，分别是硬边缘和软边缘的单个斜面，以及单面和镜像的多个斜面。
 
-![](http://thingy.top/view.php/b67777ee46af88d9a80fb6b974d4071c.png)
+![](https://thingy.top/view.php/b67777ee46af88d9a80fb6b974d4071c.png)
 
 ### **#2-2-7 生成器：Radial Grad**
 
 Radial Grad能创建一个简单的以空间中的一个点为中心的几何形状。
 
-![](http://thingy.top/view.php/d03fc8f6924f9a0563622e1083c807a2.png)
+![](https://thingy.top/view.php/d03fc8f6924f9a0563622e1083c807a2.png)
 
 这里我直接翻译了官方文档，然后补上一点官方文档没有的。
 
@@ -343,19 +343,19 @@ Type（类型）：
 
 圆锥横扫Conic Sweep：照着GAEA学的一个形状，长这个样子。
 
-![](http://thingy.top/view.php/d8e2153bd93293b00219217ffc7e5ac4.png)
+![](https://thingy.top/view.php/d8e2153bd93293b00219217ffc7e5ac4.png)
 
 ### **#2-2-8 生成器：Voronoi**
 
 有些类似水波纹，十分重要的模块。
 
-![](http://thingy.top/view.php/2dd68c0ad5d010643318630cb86470a4.png)
+![](https://thingy.top/view.php/2dd68c0ad5d010643318630cb86470a4.png)
 
 Feature Scale：规模。
 
 Style：类型。这个模块的类型很多，可以自行尝试，需要注意的是他有几个生成类似麦田轮廓的细胞模式。
 
-![](http://thingy.top/view.php/06e99dca2bf1c1c9dc2f5006168891e0.png)
+![](https://thingy.top/view.php/06e99dca2bf1c1c9dc2f5006168891e0.png)
 
 Crystallize：打开之后模块只接受彩图，对彩图执行晶格化操作。
 
@@ -365,7 +365,7 @@ Crystallize：打开之后模块只接受彩图，对彩图执行晶格化操作
 
 双击之后，我们就会发现这个模块不会弹出参数窗口，而是直接跳进了布局页面。
 
-![](http://thingy.top/view.php/774bc8e924326d922e59203f13e90926.png)
+![](https://thingy.top/view.php/774bc8e924326d922e59203f13e90926.png)
 
 左侧是画形状的地方，右侧是参数。
 
@@ -401,13 +401,13 @@ Shape Breakup：分形强度。这一强度是指真正的分形强度。
 
 噪化地形。
 
-![](http://thingy.top/view.php/21d4818d2af97e153f5d7f8f28726fbd.png)
+![](https://thingy.top/view.php/21d4818d2af97e153f5d7f8f28726fbd.png)
 
 ### **#2-3-2 滤镜：环境光遮蔽（Ambient Occlusion）**
 
 在3028时代有个大神想要AO效果，于是用了360个角度的光照图叠出来了AO，官方看见之后连声叫好，正义制作了AO模块，只留下暴力大神在风中凌乱。
 
-![](http://thingy.top/view.php/3f6965973acf0dbc92afb764b30fc225.png)
+![](https://thingy.top/view.php/3f6965973acf0dbc92afb764b30fc225.png)
 
 我之前录过一期视频教程（https://www.bilibili.com/video/BV19o4y1D7rF）专门讲这个模块的，有需要可以看看。
 
@@ -419,9 +419,9 @@ Shape Breakup：分形强度。这一强度是指真正的分形强度。
 
 效果是模糊，除了一般的高斯模块，这个模块还提供了径向模糊，修改Method的选项即可。
 
-![](http://thingy.top/view.php/4db03aca0542445ae9716d648a7f71b1.png)
+![](https://thingy.top/view.php/4db03aca0542445ae9716d648a7f71b1.png)
 
-![](http://thingy.top/view.php/64ee4813dad164b448c130abc9111044.png)
+![](https://thingy.top/view.php/64ee4813dad164b448c130abc9111044.png)
 
 ### **#2-3-5 滤镜：Clamp**
 
@@ -433,19 +433,19 @@ Shape Breakup：分形强度。这一强度是指真正的分形强度。
 
 可以将地形转化为六边形或正方形的堆叠。4027新增的模块，还没有模块图标。
 
-![](http://thingy.top/view.php/f00fa39e411fc9a4d6e26e2b06cc46a1.png)
+![](https://thingy.top/view.php/f00fa39e411fc9a4d6e26e2b06cc46a1.png)
 
 ### **#2-3-7 滤镜：曲线（Curve）**
 
 和你在PS里面用的曲线一样的，没什么可说的。对于新人十分难以控制，不推荐。
 
-![](http://thingy.top/view.php/e888bdcf78c74279b27d6920852ca416.png)
+![](https://thingy.top/view.php/e888bdcf78c74279b27d6920852ca416.png)
 
 ### **#2-3-8 滤镜：Displacement**
 
 特别特别重要的一个模块，可以对图像进行位移操作，或者俗称是扭一扭。第二个接口必须接东西，Vector模式下第三个接口也必须接东西。而且你会发现，伴随着Type的变化，端口的名字也会发生变化。
 
-![](http://thingy.top/view.php/b754a0113e1aa6621fc54ba42c929c43.png)
+![](https://thingy.top/view.php/b754a0113e1aa6621fc54ba42c929c43.png)
 
 Type：
 
@@ -465,7 +465,7 @@ Distance：控制位移的距离。
 
 但是有点屁用，在一些遮罩，比如Snow的Snow Mask遮罩里面，一些地方及其不突出导致你预览起来和到WP里面刷的雪是两回事，这时候只要接入Equalizer，就能让原本不明显的地方突出起来，以便我们进行下一步过滤。
 
-![](http://thingy.top/view.php/a0fb69d2b04d21718845d67678736777.png)
+![](https://thingy.top/view.php/a0fb69d2b04d21718845d67678736777.png)
 
 ### **#2-3-10 滤镜：水流重构/河道预处理（Flow Restructure）**
 
@@ -475,7 +475,7 @@ Distance：控制位移的距离。
 
 对地形进行扩张，处理遮罩和造山的利器。
 
-![](http://thingy.top/view.php/cbddceee20b57d41ce7cc26312d54d94.png)
+![](https://thingy.top/view.php/cbddceee20b57d41ce7cc26312d54d94.png)
 
 Action：扩张方式，Expand向外扩张，Shrink向内收缩，Open和Close夹在两者之间，Close更靠近Expand，Open更靠近Shrink。
 
@@ -485,7 +485,7 @@ Distance：扩张程度。
 
 这个模块还有一个旧版本，WM2.x有Circle模式的扩张，十分好用。
 
-![](http://thingy.top/view.php/ca2bf6bb2a373708b345834a9173649b.png)
+![](https://thingy.top/view.php/ca2bf6bb2a373708b345834a9173649b.png)
 
 ### **#2-3-12 滤镜：Flipper**
 
@@ -497,7 +497,7 @@ Distance：扩张程度。
 
 ### **#2-3-14 滤镜：概率（Probability）**
 
-![](http://thingy.top/view.php/9f570c99d3468b93a70353317811afea.png)
+![](https://thingy.top/view.php/9f570c99d3468b93a70353317811afea.png)
 
 我做过这个模块官方文档的翻译，在这里直接引用了。
 
@@ -519,7 +519,7 @@ Strength（强度）：施加偏离后，该参数将进一步降低创建点的
 
 取一个高度之后对这个高度以上的地形进行翻转，最终形成分层的图案。
 
-![](http://thingy.top/view.php/a704d3b1c313e26394b16496ab44381f.png)
+![](https://thingy.top/view.php/a704d3b1c313e26394b16496ab44381f.png)
 
 ### **#2-3-16 滤镜：Simple Transform**
 
@@ -527,7 +527,7 @@ Strength（强度）：施加偏离后，该参数将进一步降低创建点的
 
 ### **#2-3-17 滤镜：阶梯化（Terrace）**
 
-![](http://thingy.top/view.php/968977eb5914d2c6ad52548a35e72053.png)
+![](https://thingy.top/view.php/968977eb5914d2c6ad52548a35e72053.png)
 
 Terrace Method：控制阶梯化的形式。Simple不过渡，Shar锐利边缘，Smooth柔和边缘。
 
@@ -569,7 +569,7 @@ Transition Contrast：可以简单理解为阶梯化程度，这样说并不准�
 
 图片中，我将接口数量设置为2，在第一个接口连接了高低落差很大的噪波，第二个接口接入平面，第三个接口接入Voronoi。可以看到高度高的地方变为了Voronoi，而高度低的地方变成了平面。
 
-![](http://thingy.top/view.php/8da27a6a871efd613658f1a0e65927d6.png)
+![](https://thingy.top/view.php/8da27a6a871efd613658f1a0e65927d6.png)
 
 ## **#2-5 选择器**
 
@@ -577,7 +577,7 @@ Transition Contrast：可以简单理解为阶梯化程度，这样说并不准�
 
 ### **#2-5-1 选择器：光照角选择（Select Aspect）**
 
-![](http://thingy.top/view.php/fcafb6022a83ecd1ca04b5f61ef739ae.png)
+![](https://thingy.top/view.php/fcafb6022a83ecd1ca04b5f61ef739ae.png)
 
 Heading：太阳方向。0对应北方，随着参数变大逆时针旋转。
 
@@ -599,7 +599,7 @@ Elevation：太阳高度。0对应水平，90对应垂直。
 
 选择粗糙度高的地方。
 
-![](http://thingy.top/view.php/be08f6e637f4f77999a22dbaa1dd9138.png)
+![](https://thingy.top/view.php/be08f6e637f4f77999a22dbaa1dd9138.png)
 
 ### **#2-5-6 选择器：Select Slope**
 
