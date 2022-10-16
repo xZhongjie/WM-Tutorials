@@ -791,7 +791,7 @@ Write to Disk：直接导出该图片。
 
 教程视频
 
-https://www.bilibili.com/video/BV1HU4y1V7Au?share_source=copy_web&vd_source=8535694fbcb3402017ff3a91e535a343
+https://www.bilibili.com/video/BV1HU4y1V7Au
 
 教程工程
 
