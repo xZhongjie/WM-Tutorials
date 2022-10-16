@@ -1,6 +1,6 @@
 # 制作更高更妙的MC地形 WorldMachine基础教程
 
-### 本文档使用 CC BY-NC-SA 3.0 CN 协议（https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode）共享。属必须引用的部分，其权利属于各自所有人。
+### 本文档使用 CC BY-NC-SA 3.0 CN 协议（https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode） 共享。除必须引用的部分，其权利属于各自所有人。
 
 ### **您可以自由地：**
 
